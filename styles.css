@@ -10,11 +10,12 @@ header {
 
 .container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1030px;
     width: 100%;
     display: grid;
-    grid-template-rows: 1f 1f 1f 1f 1f 1f;
+    grid-template-rows: 1f 1f 1f 1f 1f 1f ;
     grid-gap: 10px;
+    padding: 15px;
 }
 header .container{
 	display: grid;
@@ -28,18 +29,21 @@ ul li{
 ul li :hover{
 	color: #5A67D8;
 }
+.overview-hero{
+	background-color: #E2E8F0;
+}
 .overview-hero .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap:10px;
-	background-color: #E2E8F0;
 }
 .overview-hero-image img{
 	float:left;
-	height: 150px;
-	width:150px;
+	height: 190px;
+	width:190px;
+	margin-left: 110px;
 }
 .overview-hero-text{
+	padding-right:100px;
 }
 .learn-about h2{
 	font-size: 24px;
@@ -66,26 +70,29 @@ ul li :hover{
 	height: 220px;
 	width:220px;
 }
-
+.testing{
+	background-color: #4A5568;
+	color:white;	
+}
 .testing .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap:10px;
-	background-color: #4A5568;
-	color:white;
+	margin-left: 350px;
 }
 
 .cta{
 	background-color:#48BB78;
 	border-radius: 5px;
-	padding: 20px;
- 	width: 100px;
+	margin-top: 75px;
+	padding: 10px;
+ 	width: 150px;
   	height: 30px;
+  	text-align: center;
+  	margin-left: 10px;
 }
 .stories .container article{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap:10px;
 }
 .stories img{
 	float:left;
@@ -103,19 +110,53 @@ ul li :hover{
 	color: #5A67D8;
 }
 
-.newsletter form{
+.newsletter{
 	background-color: #48BB78;
+
+
+}
+.newsletter h3{
+	text-align: center;
 }
 .newsletter button{
 	background-color: #5A67D8;
+	border-radius: 3px;
+	padding: 5px;
 }
 .newsletter form{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap:10px;
 }
 
 footer{
 	background-color: #4A5568;
 	color:white;
+}
+
+.message{
+	display:none;
+	font-size: 24px;
+ 	margin: 20px 0;
+  	background: white;
+  	max-width: 490px;
+  	padding: 1rem;
+
+}
+
+
+input{
+width:100%;
+padding: 14px;
+border-radius: 3px;
+}
+
+.signupform{
+	width:30%;
+	margin: 0 auto;
+}
+
+.container form{
+	display: grid;
+		grid-template-columns: 1fr 0.5fr;
+		grid-column-gap: 40px;
 }
